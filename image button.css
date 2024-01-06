@@ -1,0 +1,54 @@
+.image-button1 {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  .image-button1 img {
+    width: 25%; /* Ensure the image fills the button */
+    height: 25%;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Add hover effect */
+  .image-button1:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+  }
+  
+  .image-button1 {
+    position: absolute;
+    margin-top: 325px;/*to down*/
+    top: 0px ;/*to top*/
+    right: 75px;
+    
+    
+  }
+  .image-button2 {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  .image-button2 img {
+    width: 21%; /* Ensure the image fills the button */
+    height: 21%;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Add hover effect */
+  .image-button2:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+  }
+
+   .image-button2 {
+        position: absolute;
+        margin-top: 445px;/*to down*/
+   top: 0px ;/*to top*/
+   right: 75px;
+    
+    
+  }
