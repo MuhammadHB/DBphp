@@ -3,8 +3,11 @@
     padding: 0;
 }
 
+
+
 /* moving background to make more beauty */
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
 
 body  {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
@@ -12,62 +15,123 @@ body  {
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
 
+
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
+
 
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
 
+
         -webkit-animation-direction: alternate;
         animation-direction: alternate;              
 }
+
 
 @-webkit-keyframes slidein {
 from {background-position: top; background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
 }
 
+
 @keyframes slidein {
 from {background-position: top;background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
 
-}
+}*/
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-20deg, rgb(87, 124, 255) 50%, #424242 50%);
+    bottom:0;
+    left:-100%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
 
 
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 35px;
 }
+
+
 header .logo{
     font-size: 35px;
   
 }
+
+
 header ul{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
+
+
 header ul li{
     margin-right: 35px;
 }
+
+
 header ul li a{
     padding: 6px 15px;
+    font-size: 20px;
 }
+
+
 header ul li a:hover{
     background: #fff;
     color:chocolate ;
 }
 
+
+
 .title{ /*arabic perfumes title*/
     position: absolute;
-    margin-top: 150px;/*to down*/
+    margin-top: 125px;/*to down*/
     top: 0px ;/*to top*/
     left: 65px;
     font-size: 45px;/*text size*/
@@ -85,6 +149,7 @@ header ul li a:hover{
     font-family: "Audiowide", sans-serif;/*font design*/
     white-space: pre-line;/*make another line */
   }
+
 
 
   .content-box {
@@ -109,6 +174,14 @@ p {
     font-family: "Sofia", sans-serif;
 }
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box1 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
@@ -130,6 +203,14 @@ p {
     font-size: 15px;
     font-family: "Sofia", sans-serif;
 }
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 
 .content-box2 {
     border: 2.5px solid chocolate; /* Add border if desired */
@@ -153,12 +234,20 @@ p {
     font-family: "Sofia", sans-serif;
 }
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box3 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
     width: 135px; /* Set width as needed */
     position: absolute;
-    top: 460px;
+    top: 470px;
     right: 20px;
 }
 
@@ -175,12 +264,20 @@ p {
     font-family: "Sofia", sans-serif;
 }
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box4 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
     width: 135px; /* Set width as needed */
     position: absolute;
-    top: 460px;
+    top: 470px;
     right: 180px;
 }
 
@@ -197,12 +294,20 @@ p {
     font-family: "Sofia", sans-serif;
 } 
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box5 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
     width: 135px; /* Set width as needed */
     position: absolute;
-    top: 460px;
+    top: 470px;
     right: 340px;
 }
 
@@ -219,12 +324,20 @@ p {
     font-family: "Sofia", sans-serif;
 }
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box6 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
     width: 135px; /* Set width as needed */
     position: absolute;
-    top: 460px;
+    top: 470px;
     right: 500px;
 }
 
@@ -241,12 +354,20 @@ p {
     font-family: "Sofia", sans-serif;
 }
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box7 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
     width: 135px; /* Set width as needed */
     position: absolute;
-    top: 460px;
+    top: 470px;
     right: 660px;
 }
 
@@ -263,12 +384,20 @@ p {
     font-family: "Sofia", sans-serif;
 }
 
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 .content-box8 {
     border: 2.5px solid chocolate; /* Add border if desired */
     padding: 4px; /* Adjust padding as needed */
     width: 135px; /* Set width as needed */
     position: absolute;
-    top: 460px;
+    top: 470px;
     right: 820px;
 }
 
@@ -284,6 +413,2788 @@ p {
     font-size: 15px;
     font-family: "Sofia", sans-serif;
 }
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box9 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 690px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box10 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 690px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box11 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 690px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box12 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 690px;
+    right: 500px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box13 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 690px;
+    right: 660px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box14 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 690px;
+    right: 820px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box15 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 910px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box16 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 910px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box17 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 910px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box18 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 910px;
+    right: 500px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box19 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 910px;
+    right: 660px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box20 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 910px;
+    right: 820px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box21 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1130px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box22 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1130px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box23 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1130px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box24 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1130px;
+    right: 500px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box25 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1130px;
+    right: 660px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box26 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1130px;
+    right: 820px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#myBtn {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: chocolate;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #ffad41a8;
+  }
+
+
+@media screen and  (min-width:500px) and (max-width:1370px){
+
+
+    .title1{ /*Describtion of arabic perfumes title*/
+        position: absolute;
+        margin-top: 250px;/*to down*/
+        top: 0px ;/*to top*/
+        left: 65px;
+        font-size: 13px;/*text size */
+        font-family: "Audiowide", sans-serif;/*font design*/
+        white-space: pre-line;/*make another line */
+      }
+
+    .content-box {
+        border: 2.5px solid chocolate; /* Add border if desired */
+        padding: 4px; /* Adjust padding as needed */
+        width: 135px; /* Set width as needed */
+        position: absolute;
+        top: 1350px;
+        right: 20px;
+    }
+    
+    img {
+        max-width:100%; /* Ensure the image doesn't exceed the container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    p {
+        margin-top: 15px; /* Add spacing between image and text */
+        color: chocolate;
+        padding: 2.5px;
+        font-size: 15px;
+        font-family: "Sofia", sans-serif;
+    }
+    
+    a{
+        font-size: 12px;
+        color: black;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    
+    
+    .content-box1 {
+        border: 2.5px solid chocolate; /* Add border if desired */
+        padding: 4px; /* Adjust padding as needed */
+        width: 135px; /* Set width as needed */
+        position: absolute;
+        top: 1350px;
+        right: 180px;
+    }
+    
+    img {
+        max-width:100%; /* Ensure the image doesn't exceed the container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    p {
+        margin-top: 15px; /* Add spacing between image and text */
+        color: chocolate;
+        padding: 2.5px;
+        font-size: 15px;
+        font-family: "Sofia", sans-serif;
+    }
+    
+    a{
+        font-size: 12px;
+        color: black;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    
+    
+    .content-box2 {
+        border: 2.5px solid chocolate; /* Add border if desired */
+        padding: 4px; /* Adjust padding as needed */
+        width: 135px; /* Set width as needed */
+        position: absolute;
+        top: 1350px;
+        right: 340px;
+    }
+    
+    img {
+        max-width:100%; /* Ensure the image doesn't exceed the container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    p {
+        margin-top: 15px; /* Add spacing between image and text */
+        color: chocolate;
+        padding: 2.5px;
+        font-size: 15px;
+        font-family: "Sofia", sans-serif;
+    }
+    
+    a{
+        font-size: 12px;
+        color: black;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+.content-box6 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1570px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box7 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1570px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.content-box8 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1570px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content-box12 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1790px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box13 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1790px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box14 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 1790px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content-box18 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box19 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box20 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content-box24 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2230px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box25 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2230px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box26 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2230px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+.content-box3 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2450px;
+    right: 20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box4 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2450px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+} 
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box5 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 135px; /* Set width as needed */
+    position: absolute;
+    top: 2450px;
+    right: 340px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+}
+
+
+
+@media screen and  (max-width:500px) and (min-width:300px){
+
+    .title1{ /*Describtion of arabic perfumes title*/
+        position: absolute;
+        margin-top: 190px;/*to down*/
+        top: 0px ;/*to top*/
+        left: 65px;
+        font-size: 13px;/*text size */
+        font-family: "Audiowide", sans-serif;/*font design*/
+        white-space: pre-line;/*make another line */
+      }
+      .title{ /*arabic perfumes title*/
+        position: absolute;
+        margin-top: 75px;/*to down*/
+        top: 0px ;/*to top*/
+        left: 65px;
+        font-size: 45px;/*text size*/
+        font-family: "Sofia", sans-serif;/*font design*/
+     
+      }
+
+  .content-box {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 650px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box1 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 650px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box2 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 650px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box3 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 820px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box4 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 820px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+} 
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box5 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 820px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box6 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 990px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box7 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 990px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box8 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 990px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box9 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1160px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box10 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1160px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box11 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1160px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box12 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1330px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box13 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1330px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box14 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1330px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box15 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1500px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box16 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1500px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box17 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1500px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box18 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1670px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box19 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1670px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box20 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1670px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box21 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1840px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box22 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1840px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box23 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1840px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box24 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 10px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box25 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 95px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box26 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 180px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+}  
+
+
+@media screen and  (max-width:300px) {
+    .title1{ /*Describtion of arabic perfumes title*/
+        position: absolute;
+        margin-top: 190px;/*to down*/
+        top: 0px ;/*to top*/
+        left: 65px;
+        font-size: 13px;/*text size */
+        font-family: "Audiowide", sans-serif;/*font design*/
+        white-space: pre-line;/*make another line */
+      }
+      .title{ /*arabic perfumes title*/
+        position: absolute;
+        margin-top: 75px;/*to down*/
+        top: 0px ;/*to top*/
+        left: 65px;
+        font-size: 45px;/*text size*/
+        font-family: "Sofia", sans-serif;/*font design*/
+     
+      }
+
+  .content-box {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 650px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box1 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 650px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box2 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 650px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box3 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 820px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box4 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 820px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+} 
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box5 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 820px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box6 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 990px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box7 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 990px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box8 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 990px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box9 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1160px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box10 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1160px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box11 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1160px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box12 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1330px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box13 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1330px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box14 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1330px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box15 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1500px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box16 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1500px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box17 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1500px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box18 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1670px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box19 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1670px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box20 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1670px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box21 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1840px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box22 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1840px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box23 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 1840px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box24 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: -20px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box25 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 55px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.content-box26 {
+    border: 2.5px solid chocolate; /* Add border if desired */
+    padding: 4px; /* Adjust padding as needed */
+    width: 60px; /* Set width as needed */
+    position: absolute;
+    top: 2010px;
+    right: 130px;
+}
+
+img {
+    max-width:100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin-top: 15px; /* Add spacing between image and text */
+    color: chocolate;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-size: 12px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+iframe {
+    display: none;
+    }
+
+}
+
+
+
+
 
 iframe {
     margin: 75px;

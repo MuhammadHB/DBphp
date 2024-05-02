@@ -1,174 +1,328 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 /* moving background to make more beauty */
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
-body  {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
-  background-size:cover;
-        -webkit-animation: slidein 100s;
-        animation: slidein 100s;
+body {
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
 
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 
-        -webkit-animation-direction: alternate;
-        animation-direction: alternate;              
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes slidein {
-from {background-position: top; background-size:3000px; }
-to {background-position: -100px 0px;background-size:2750px;}
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
 }
 
 @keyframes slidein {
-from {background-position: top;background-size:3000px; }
-to {background-position: -100px 0px;background-size:2750px;}
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
 
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+
+}*/
+
+
+
+body {
+  background: rgb(0, 0, 0);
+}
+section {
+  display: flex; /*flex like to make control and placing and distribution of the component or we can say organizing the screen*/
+  justify-content: center;/*توسط العناصر على طول المحور الرئيسي center the element along the main axis*/
+  align-items: center;/*center the element along the main axis*/
+}
+
+span {
+  position: absolute; /* mean the element position relative to thr nearest parent element vs relative mean the element position is relative to its original position */ 
+  width: 100px;
+  height: 100px;
+  background: transparent;/*transparen make the elements  background transparen so we can see the background behind it لجعل خلفية العنصر شفافة بحيث تكون مرئية للعناصر الموجودة خلفه */
+  
+  animation: animate 5s linear infinite; /*make animation infinite*/
+}
+
+
+@keyframes animate { /*keyframer for make animation and control the animations */
+  0% {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-500%) rotate(360deg);
+    opacity: 0;
+  }
 }
 
 
 
-a{
+
+
+
+
+
+
+a {
+  text-decoration: none; /*mean the text that we use (original text) nothing under text*/
+  color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px;
+}
+
+header .logo {
+  font-size: 35px;
+  
+
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 35px;
+}
+
+header ul li a {
+  padding: 6px 15px;
+}
+
+header ul li a:hover {
+  background: #fff;
+  color: chocolate;
+}
+
+
+/*make open and close menu */
+.simplemenu {
+  display: none;
+  background-color: rgba(130, 130, 130, 0);
+  position: relative;}
+
+.dropbtn {
+    background-color: #00000000;
+    color: chocolate;
+    padding: 1rem; /*1rem mean 16px if we have 2rem means 32px*/ 
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;/*Allows control over cursor look in an element*/
+    font-family: Baloo, sans-serif;    
+  }
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #046e8f;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+.dropdown-content a {
+    color: black;
+    padding: 0.8rem 1rem;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 'Open Sans', sans-serif;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 35px;
-}
-header .logo{
-    font-size: 35px;
-  
-}
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-header ul li{
-    margin-right: 35px;
-}
-header ul li a{
-    padding: 6px 15px;
-}
-header ul li a:hover{
-    background: #fff;
-    color:chocolate ;
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+
+/*the space between the screen and elements (margin)
+the space between two elements for ex like border and text the space between them (padding)*/
+
+
+
+.title {
+  /*arabic perfumes title*/
+  position: absolute;
+  margin-top: 200px;
+  /*to down*/
+  top: 0px;
+  /*to top*/
+  left: 65px;
+  font-size: 45px;
+  /*text size*/
+
 }
 
-  
-  .title{ /*arabic perfumes title*/
-    position: absolute;
-    margin-top: 200px;/*to down*/
-    top: 0px ;/*to top*/
-    left: 65px;
-    font-size: 45px;/*text size*/
- 
-  }
-  .title1{ /*Describtion of arabic perfumes title*/
-    position: absolute;
-    margin-top: 270px;/*to down*/
-    top: 0px ;/*to top*/
-    left: 65px;
-    font-size: 18px;/*text size */
-    white-space: pre-line;/*make another line */
- 
-  }
-  .content-box {
-    border: 2.5px solid chocolate; /* Add border if desired */
-    padding: 5px; /* Adjust padding as needed */
-    width: 150px; /* Set width as needed */
-    position: absolute;
-    bottom: 150px;
-    right: 400px;
+.title1 {
+  /*Describtion of arabic perfumes title*/
+  position: absolute;
+  margin-top: 270px;
+  /*to down*/
+  top: 0px;
+  /*to top*/
+  left: 65px;
+  font-size: 18px;
+  /*text size */
+  white-space: pre-line;
+  /*make another line */
+
+}
+
+.content-box {
+  border: 2.5px solid chocolate;
+  /* Add border if desired */
+  padding: 5px;
+  /* Adjust padding as needed */
+  width: 150px;
+  /* Set width as needed */
+  position: absolute;
+  bottom: 150px;
+  right: 400px;
 }
 
 img {
-    max-width:100%; /* Ensure the image doesn't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed the container width */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 p {
-    margin-top: 15px; /* Add spacing between image and text */
-    color: chocolate;
-    font-size: 20px;
-    font-family: 'Prompt', sans-serif;
+  margin-top: 15px;
+  /* Add spacing between image and text */
+  color: chocolate;
+  font-size: 20px;
+  font-family: 'Prompt', sans-serif;
 }
 
 b {
-  margin-top: 15px; /* Add spacing between image and text */
+  margin-top: 15px;
+  /* Add spacing between image and text */
   color: #fff;
   font-size: 10px;
-  font-family: 'Ubuntu', sans-serif; 
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
 .content-box1 {
-  border: 2.5px solid chocolate; /* Add border if desired */
-  width: 150px; /* Set width as needed */
-  padding: 5px; /* Adjust padding as needed */
+  border: 2.5px solid chocolate;
+  /* Add border if desired */
+  width: 150px;
+  /* Set width as needed */
+  padding: 5px;
+  /* Adjust padding as needed */
   position: absolute;
   bottom: 150px;
   right: 225px;
 }
 
 img {
-  max-width:100%; /* Ensure the image doesn't exceed the container width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed the container width */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 p {
-  margin-top: 15px; /* Add spacing between image and text */
+  margin-top: 15px;
+  /* Add spacing between image and text */
   color: chocolate;
   font-size: 20px;
   font-family: 'Prompt', sans-serif;
 }
 
 b {
-margin-top: 15px; /* Add spacing between image and text */
-color: #fff;
-font-size: 10px;
-font-family: 'Ubuntu', sans-serif; 
+  margin-top: 15px;
+  /* Add spacing between image and text */
+  color: #fff;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
 
 .content-box2 {
-  border: 2.5px solid chocolate; /* Add border if desired */
-  width: 150px; /* Set width as needed */
-  padding: 5px; /* Adjust padding as needed */
+  border: 2.5px solid chocolate;
+  /* Add border if desired */
+  width: 150px;
+  /* Set width as needed */
+  padding: 5px;
+  /* Adjust padding as needed */
   position: absolute;
   bottom: 150px;
   right: 50px;
 }
 
 img {
-  max-width:100%; /* Ensure the image doesn't exceed the container width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed the container width */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 p {
-  margin-top: 15px; /* Add spacing between image and text */
+  margin-top: 15px;
+  /* Add spacing between image and text */
   color: chocolate;
   font-size: 20px;
   font-family: 'Prompt', sans-serif;
 }
 
 b {
-margin-top: 15px; /* Add spacing between image and text */
-color: #fff;
-font-size: 10px;
-font-family: 'Ubuntu', sans-serif; 
+  margin-top: 15px;
+  /* Add spacing between image and text */
+  color: #fff;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
 }
+
+
+/*clock*/
+.clock {
+  overflow: hidden;
+  width: 120px;
+  height: 50px;
+  /*display: none;*/
+}
+
 
 
 
@@ -177,18 +331,25 @@ font-family: 'Ubuntu', sans-serif;
   /* Add your initial styling */
   border: none;
   background-color: #f0f0f000;
-  /* Other styles as needed */
-  transition: transform 0.5s ease; /* Add transition for smooth animation */
+  transition: transform 0.5s ease;
+  /* Add transition for smooth animation */
 }
-.image-button img {/*image button size */
-  width: 12%; /* Ensure the image fills the button */
+
+.image-button img {
+  /*image button size */
+  width: 12%;
+  /* Ensure the image fills the button */
   height: 12%;
-  object-fit: cover; /* Maintain aspect ratio */
+  
+  
 }
+
 /* Add hover effect */
 .image-button:hover {
-  transform: scale(1.1); /* Increase the scale on hover */
+  transform: scale(1.1);
+  /* Increase the scale on hover */
 }
+
 .image-button {
   position: absolute;
   bottom: 115px;
@@ -204,69 +365,656 @@ font-family: 'Ubuntu', sans-serif;
   border: none;
   background-color: #f0f0f000;
   /* Other styles as needed */
-  transition: transform 0.5s ease; /* Add transition for smooth animation */
+  transition: transform 0.5s ease;
+  /* Add transition for smooth animation */
 }
-.image-button-1 img {/*image button size */
-  width: 12%; /* Ensure the image fills the button */
+
+.image-button-1 img {
+  /*image button size */
+  width: 12%;
+  /* Ensure the image fills the button */
   height: 12%;
-  object-fit: cover; /* Maintain aspect ratio */
 }
+
 /* Add hover effect */
 .image-button-1:hover {
-  transform: scale(1.1); /* Increase the scale on hover */
+  transform: scale(1.1);
+  /* Increase the scale on hover */
 }
+
 .image-button-1 {
   position: absolute;
   bottom: 115px;
   right: 115px;
 }
 
-
 .image-button-2 {
   /* Add your initial styling */
   border: none;
   background-color: #f0f0f000;
   /* Other styles as needed */
-  transition: transform 0.5s ease; /* Add transition for smooth animation */
+  transition: transform 0.5s ease;
+  /* Add transition for smooth animation */
 }
-.image-button-2 img {/*image button size */
-  width: 12%; /* Ensure the image fills the button */
+
+.image-button-2 img {
+  /*image button size */
+  width: 12%;
+  /* Ensure the image fills the button */
   height: 12%;
-  object-fit: cover; /* Maintain aspect ratio */
+
 }
+
 /* Add hover effect */
 .image-button-2:hover {
-  transform: scale(1.1); /* Increase the scale on hover */
+  transform: scale(1.1);
+  /* Increase the scale on hover */
 }
+
 .image-button-2 {
   position: absolute;
   bottom: 115px;
-  right: -60px;
+  right: -55px;
 }
+
+
+
 
 /*input*/
 
 form {
   margin: 75px;
   color: chocolate;
-  margin-top: 300px;/*to down*/
-  top: 0px ;/*to top*/
+  margin-top: 135px;
+  /*to down*/
+  top: 0px;
+  /*to right*/
   left: 0px;
 }
 
+
 iframe {
   margin: 75px;
-  margin-top: 0px;/*to down*/
-  top: 0px ;/*to top*/
+  margin-top: 0px;
+  /*to down*/
+  top: 0px;
+  /*to top*/
   left: 0px;
+}
+
+.peoplecunt {
+  position: relative;
+  left: 100px ;
+  top: -35px ;
 }
 
 footer {
   background-color: #f7060600;
-  color: rgb(0, 0, 0);
+  color: chocolate;
   text-align: center;
   padding: 7px;
   position: absolute;
   bottom: 0;
   width: 100%;
+  
 }
+
+#myBtn {
+  display: inline;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: chocolate;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #ffad41a8;
+}
+
+
+@media screen and (max-width:580px) {
+
+/*trying to hide my list*/
+  header ul {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header ul li {
+    margin-right: 35px;
+  }
+  
+  header ul li a {
+    padding: 6px 15px;
+  }
+  
+  header ul li a:hover {
+    background: #fff;
+    color: chocolate;
+  }
+
+  /*make open and close menu */
+  .simplemenu {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 200px;
+    top: 40px;
+  
+  }
+  
+  .dropbtn {
+      background-color: #00000000;
+      color: chocolate;
+      padding: 1rem;
+      font-size: 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-family: Baloo, sans-serif;  
+      font-size: 35px;
+        
+    }
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #00000062;
+  }
+  
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      list-style-type: none;
+      margin-top: 0;
+      padding-left: 0;
+      top: 60px;
+  }
+  .dropdown-content a {
+      color: rgb(255, 255, 255);
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: x-small;
+  }
+  .dropdown-content a:hover {background-color: chocolate}
+  
+  .show {display:block;}
+
+
+  
+
+  .title1 {
+    /*Describtion of arabic perfumes title*/
+    position: absolute;
+    margin-top: 350px;
+    /*to down*/
+    top: 0px;
+    /*to top*/
+    left: 65px;
+    font-size: 18px;
+    /*text size */
+    white-space: pre-line;
+    /*make another line */
+  
+  } 
+  
+  form {
+    margin: 75px;
+    color: chocolate;
+    margin-top: 750px;
+    /*to down*/
+    top: 0px;
+    /*to top*/
+    left: 0px;
+  }
+  
+  .content-box {
+    border: 2.5px solid chocolate;
+    /* Add border if desired */
+    padding: 5px;
+    /* Adjust padding as needed */
+    width: 120px;
+    /* Set width as needed */
+    position: absolute;
+    bottom: -250px;
+    right: 120px;
+  }
+  
+  img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  p {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: chocolate;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  b {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .image-button {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+  }
+  
+  .image-button img {
+    /*image button size */
+    width: 12%;
+    /* Ensure the image fills the button */
+    height: 12%;
+
+  }
+  
+  /* Add hover effect */
+  .image-button:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+  }
+  
+  .image-button {
+    position: absolute;
+    bottom: -290px;
+    right: 10px;
+  }
+
+  .content-box1 {
+    border: 2.5px solid chocolate;
+    /* Add border if desired */
+    width: 120px;
+    /* Set width as needed */
+    padding: 5px;
+    /* Adjust padding as needed */
+    position: absolute;
+    bottom: -250px;
+    right: -35px;
+  }
+  
+  img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  p {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: chocolate;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  b {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .image-button-1 {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+  }
+  
+  .image-button-1 img {
+    /*image button size */
+    width: 12%;
+    /* Ensure the image fills the button */
+    height: 12%;
+  }
+  
+  /* Add hover effect */
+  .image-button-1:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+  }
+  
+  .image-button-1 {
+    position: absolute;
+    bottom: -290px;
+    right: -140px;
+  }
+
+  .content-box2 {
+    display: none;
+    border: 2.5px solid chocolate;
+    /* Add border if desired */
+    width: 150px;
+    /* Set width as needed */
+    padding: 5px;
+    /* Adjust padding as needed */
+    position: absolute;
+    bottom: -250px;
+    right: -250px;
+  }
+  
+  img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  p {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: chocolate;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  b {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .image-button-2 {
+    display: none;
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+  }
+  
+  .image-button-2 img {
+    /*image button size */
+    width: 12%;
+    /* Ensure the image fills the button */
+    height: 12%;
+  }
+  
+  /* Add hover effect */
+  .image-button-2:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+  }
+  
+  .image-button-2 {
+    position: absolute;
+    bottom: -290px;
+    right: -355px;
+  }
+  
+  
+  iframe {
+    margin: 75px;
+    margin-top: 0px;
+    /*to down*/
+    top: 0px;
+    /*to top*/
+    left: 0px;
+  }
+  footer {
+  display: none;
+  }
+}
+
+@media screen and  (min-width:580px) and (max-width:1190px) {
+
+  .title1 {
+    /*Describtion of arabic perfumes title*/
+    position: absolute;
+    margin-top: 350px;
+    /*to down*/
+    top: 0px;
+    /*to top*/
+    left: 65px;
+    font-size: 18px;
+    /*text size */
+    white-space: pre-line;
+    /*make another line */
+  
+  } 
+  
+  form {
+    margin: 75px;
+    color: chocolate;
+    margin-top: 750px;
+    /*to down*/
+    top: 0px;
+    /*to top*/
+    left: 0px;
+  }
+  
+  .content-box {
+    border: 2.5px solid chocolate;
+    /* Add border if desired */
+    padding: 5px;
+    /* Adjust padding as needed */
+    width: 150px;
+    /* Set width as needed */
+    position: absolute;
+    bottom: -250px;
+    right: 345px;
+  }
+  
+  img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  p {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: chocolate;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  b {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .image-button {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+  }
+  
+  .image-button img {
+    /*image button size */
+    width: 12%;
+    /* Ensure the image fills the button */
+    height: 12%;
+
+  }
+  
+  /* Add hover effect */
+  .image-button:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+  }
+  
+  .image-button {
+    position: absolute;
+    bottom: -290px;
+    right: 240px;
+  }
+
+  .content-box1 {
+    border: 2.5px solid chocolate;
+    /* Add border if desired */
+    width: 150px;
+    /* Set width as needed */
+    padding: 5px;
+    /* Adjust padding as needed */
+    position: absolute;
+    bottom: -250px;
+    right: 175px;
+  }
+  
+  img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  p {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: chocolate;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  b {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .image-button-1 {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+  }
+  
+  .image-button-1 img {
+    /*image button size */
+    width: 12%;
+    /* Ensure the image fills the button */
+    height: 12%;
+
+  }
+  
+  /* Add hover effect */
+  .image-button-1:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+  }
+  
+  .image-button-1 {
+    position: absolute;
+    bottom: -290px;
+    right: 70px;
+  }
+
+  .content-box2 {
+    border: 2.5px solid chocolate;
+    /* Add border if desired */
+    width: 150px;
+    /* Set width as needed */
+    padding: 5px;
+    /* Adjust padding as needed */
+    position: absolute;
+    bottom: -250px;
+    right: 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+  
+  p {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: chocolate;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  b {
+    margin-top: 15px;
+    /* Add spacing between image and text */
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .image-button-2 {
+    /* Add your initial styling */
+    border: none;
+    background-color: #f0f0f000;
+    /* Other styles as needed */
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+  }
+  
+  .image-button-2 img {
+    /*image button size */
+    width: 12%;
+    /* Ensure the image fills the button */
+    height: 12%;
+  }
+  
+  /* Add hover effect */
+  .image-button-2:hover {
+    transform: scale(1.1);
+    /* Increase the scale on hover */
+  }
+  
+  .image-button-2 {
+    position: absolute;
+    bottom: -290px;
+    right: -95px;
+  }
+  
+  
+  iframe {
+    margin: 75px;
+    margin-top: 0px;
+    /*to down*/
+    top: 0px;
+    /*to top*/
+    left: 0px;
+  }
+  footer {
+  display: none;
+  }
+}
+
+
+
